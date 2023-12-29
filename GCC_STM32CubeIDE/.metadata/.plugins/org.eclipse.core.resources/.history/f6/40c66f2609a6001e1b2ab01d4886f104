@@ -1,0 +1,74 @@
+#include "uart.h"
+#include "stm32f4xx.h"
+#include <stdio.h>
+#include <stdint.h>
+
+#define GPIOAEN			(1U<<0)
+#define USART2EN		(1U<<17)
+
+#define SYS_FREQ		16000000
+#define APB1_CLK		SYS_FREQ
+#define UART_BAUDRATE 	115200
+
+#define CR1_TE 			(1U<<3)
+#define CR1_UE			(1U<<13)
+
+#define SR_TXE			(1U<<7)
+
+static void uart_write(int ch);
+static void uart_set_baudrate(uint32_t periph_clk, uint32_t baudrate);
+static uint32_t compute_uart_bd(uint32_t periph_clk, uint32_t baudrate);
+
+
+int __io_putchar(int ch) // Overriding destination of printf.
+{
+	uart_write(ch);
+	return ch;
+}
+
+void uart_tx_init() // TX => pin for transmitting information (RX is for receiving line).
+{
+	// Enable clock access to GPIOA.
+	RCC->AHB1ENR |= GPIOAEN;
+
+	// Set PA2 to AF mode (USART2 TX), we don't care about RX right now since our board will only transmit..
+	GPIOA->MODER &= ~(1U<<4);
+	GPIOA->MODER |= (1U<<5);
+
+	// Set AF type to AF07, PA2 is denoted by AFR[0] (low) pins 11,10,9,8 (for which we must out 0111 to specify 7)
+	GPIOA->AFR[0] |= (1U<<8);
+	GPIOA->AFR[0] |= (1U<<9);
+	GPIOA->AFR[0] |= (1U<<10);
+	GPIOA->AFR[0] &= ~(1U<<11);
+
+	// Enable clock access to UART.
+	RCC->APB1ENR |= USART2EN;
+
+	// Configure baud rate.
+	uart_set_baudrate(APB1_CLK, UART_BAUDRATE);
+
+	// Set transfer direction to TX (we're transmitting)
+	USART2->CR1 = CR1_TE;
+
+	// Enable UART module.
+	USART2->CR1 |= CR1_UE;
+}
+
+static void uart_write(int ch)
+{
+	// Wait until transmit data reg is empty.
+	while (!(USART2->SR & SR_TXE));
+
+	// Write data to transmit.
+	USART2->DR = (ch & 0xFF); // Transmit 8 bits representing the character ch.
+}
+
+static void uart_set_baudrate(uint32_t periph_clk, uint32_t baudrate)
+{
+	USART2->BRR = compute_uart_bd(periph_clk, baudrate);
+}
+
+static uint32_t compute_uart_bd(uint32_t periph_clk, uint32_t baudrate)
+{
+	return (periph_clk + (baudrate / 2)) / baudrate;
+}

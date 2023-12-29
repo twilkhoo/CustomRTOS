@@ -1,0 +1,21 @@
+01:27:37 **** Incremental Build of configuration Debug for project 1_uart_driver ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F411xE -c -I../Inc -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Include" -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F411xE -c -I../Inc -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Include" -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F411xE -c -I../Inc -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Include" -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F411xE -c -I../Inc -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Include" -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F411xE -c -I../Inc -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Include" -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/1_uart_driver/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "1_uart_driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\1_uart_driver\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_uart_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1_uart_driver.elf
+ 
+arm-none-eabi-size   1_uart_driver.elf 
+arm-none-eabi-objdump -h -S  1_uart_driver.elf  > "1_uart_driver.list"
+   text	   data	    bss	    dec	    hex	filename
+   5344	    100	   1900	   7344	   1cb0	1_uart_driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1_uart_driver.list
+ 
+
+01:27:37 Build Finished. 0 errors, 0 warnings. (took 446ms)
+

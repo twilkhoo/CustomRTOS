@@ -1,0 +1,16 @@
+01:32:43 **** Incremental Build of configuration Debug for project 2_timebase ****
+make -j12 all 
+arm-none-eabi-gcc -o "2_timebase.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\2_timebase\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_timebase.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_timebase.elf
+ 
+arm-none-eabi-size   2_timebase.elf 
+arm-none-eabi-objdump -h -S  2_timebase.elf  > "2_timebase.list"
+   text	   data	    bss	    dec	    hex	filename
+   5460	    104	   1912	   7476	   1d34	2_timebase.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_timebase.list
+ 
+
+01:32:43 Build Finished. 0 errors, 0 warnings. (took 292ms)
+

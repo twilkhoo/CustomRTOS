@@ -1,0 +1,181 @@
+!SESSION 2023-12-26 03:54:27.532 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-26 03:54:42.985
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-26 03:54:42.987
+!MESSAGE Log4j2 initialized with config file C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-26 03:54:51.555
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-26 03:58:18.716
+!MESSAGE Indexed '0_led_driver' (3 sources, 53 headers) in 1.56 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2023-12-26 16:24:27.733 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-26 16:26:19.738
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-26 16:26:31.028
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-26 16:26:31.030
+!MESSAGE Log4j2 initialized with config file C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-26 16:26:43.581
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-12-28 18:06:34.991 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-28 18:06:51.716
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-28 18:06:51.718
+!MESSAGE Log4j2 initialized with config file C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-28 18:07:03.458
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-28 19:16:02.007
+!MESSAGE Indexed '0_led_driver' (4 sources, 63 headers) in 0.691 sec: 3,080 declarations; 5,120 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-28 19:18:11.759
+!MESSAGE Indexed '0_led_driver' (4 sources, 63 headers) in 0.501 sec: 3,080 declarations; 5,120 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-28 20:42:33.261
+!MESSAGE Indexed '1_uart_driver' (4 sources, 63 headers) in 0.488 sec: 3,085 declarations; 5,160 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-12-28 23:53:18.734
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-29 00:01:53.557
+!MESSAGE Indexed '2_timebase' (8 sources, 66 headers) in 0.484 sec: 2,896 declarations; 4,052 references; 3 unresolved inclusions; 30 syntax errors; 581 unresolved names (7.7%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-12-29 00:02:24.513
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\1_uart_driver\Debug\1_uart_driver.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-12-29 00:02:24.514
+!MESSAGE C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\1_uart_driver\Debug\1_uart_driver.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\1_uart_driver\Debug\1_uart_driver.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.help.base 2 0 2023-12-29 00:03:01.073
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.cdt.doc.user_11.1.1.202303201356 [186]'. The index should be rebuilt with Lucene 9.4.2
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-12-29 00:03:38.336
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-12-29 00:04:15.006
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2023-12-29 00:04:23.505
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toOSString()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.cdt.managedbuilder.internal.macros.MbsMacroSupplier.getMacro(MbsMacroSupplier.java:580)
+	at org.eclipse.cdt.managedbuilder.internal.macros.MbsMacroSupplier.getMacro(MbsMacroSupplier.java:374)
+	at org.eclipse.cdt.managedbuilder.internal.macros.BuildCdtVariablesSupplierBase.getVariable(BuildCdtVariablesSupplierBase.java:43)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableManager.getVariable(SupplierBasedCdtVariableManager.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildVariablesContributor.getVariable(BuildVariablesContributor.java:112)
+	at org.eclipse.cdt.internal.core.cdtvariables.BuildSystemVariableSupplier.getMacro(BuildSystemVariableSupplier.java:108)
+	at org.eclipse.cdt.internal.core.cdtvariables.CoreMacroSupplierBase.getVariable(CoreMacroSupplierBase.java:26)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableManager.getVariable(SupplierBasedCdtVariableManager.java:35)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveMacro(SupplierBasedCdtVariableSubstitutor.java:274)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveMacro(SupplierBasedCdtVariableSubstitutor.java:265)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.getResolvedMacro(SupplierBasedCdtVariableSubstitutor.java:250)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveToString(SupplierBasedCdtVariableSubstitutor.java:218)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveToString(SupplierBasedCdtVariableSubstitutor.java:234)
+	at org.eclipse.cdt.utils.cdtvariables.CdtVariableResolver.resolveToString(CdtVariableResolver.java:127)
+	at org.eclipse.cdt.internal.core.cdtvariables.CdtVariableManager.resolveValue(CdtVariableManager.java:111)
+	at org.eclipse.cdt.managedbuilder.internal.language.settings.providers.MBSLanguageSettingsProvider.getSettingEntries(MBSLanguageSettingsProvider.java:95)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer$LanguageSettingsWorkspaceProvider.getSettingEntries(LanguageSettingsProvidersSerializer.java:192)
+	at org.eclipse.cdt.internal.ui.viewsupport.CustomBuildSettingsDecorator.isCustomizedResource(CustomBuildSettingsDecorator.java:67)
+	at org.eclipse.cdt.internal.ui.viewsupport.CustomBuildSettingsDecorator.decorate(CustomBuildSettingsDecorator.java:52)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2023-12-29 00:04:23.507
+!MESSAGE Exception in Decorator. The 'C/C++ Files and Folders with Customized Build Settings' decorator will be disabled.
+!SUBENTRY 1 org.eclipse.ui 4 4 2023-12-29 00:04:23.507
+!MESSAGE Cannot invoke "org.eclipse.core.runtime.IPath.toOSString()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toOSString()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.cdt.managedbuilder.internal.macros.MbsMacroSupplier.getMacro(MbsMacroSupplier.java:580)
+	at org.eclipse.cdt.managedbuilder.internal.macros.MbsMacroSupplier.getMacro(MbsMacroSupplier.java:374)
+	at org.eclipse.cdt.managedbuilder.internal.macros.BuildCdtVariablesSupplierBase.getVariable(BuildCdtVariablesSupplierBase.java:43)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableManager.getVariable(SupplierBasedCdtVariableManager.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildVariablesContributor.getVariable(BuildVariablesContributor.java:112)
+	at org.eclipse.cdt.internal.core.cdtvariables.BuildSystemVariableSupplier.getMacro(BuildSystemVariableSupplier.java:108)
+	at org.eclipse.cdt.internal.core.cdtvariables.CoreMacroSupplierBase.getVariable(CoreMacroSupplierBase.java:26)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableManager.getVariable(SupplierBasedCdtVariableManager.java:35)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveMacro(SupplierBasedCdtVariableSubstitutor.java:274)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveMacro(SupplierBasedCdtVariableSubstitutor.java:265)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.getResolvedMacro(SupplierBasedCdtVariableSubstitutor.java:250)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveToString(SupplierBasedCdtVariableSubstitutor.java:218)
+	at org.eclipse.cdt.utils.cdtvariables.SupplierBasedCdtVariableSubstitutor.resolveToString(SupplierBasedCdtVariableSubstitutor.java:234)
+	at org.eclipse.cdt.utils.cdtvariables.CdtVariableResolver.resolveToString(CdtVariableResolver.java:127)
+	at org.eclipse.cdt.internal.core.cdtvariables.CdtVariableManager.resolveValue(CdtVariableManager.java:111)
+	at org.eclipse.cdt.managedbuilder.internal.language.settings.providers.MBSLanguageSettingsProvider.getSettingEntries(MBSLanguageSettingsProvider.java:95)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer$LanguageSettingsWorkspaceProvider.getSettingEntries(LanguageSettingsProvidersSerializer.java:192)
+	at org.eclipse.cdt.internal.ui.viewsupport.CustomBuildSettingsDecorator.isCustomizedResource(CustomBuildSettingsDecorator.java:67)
+	at org.eclipse.cdt.internal.ui.viewsupport.CustomBuildSettingsDecorator.decorate(CustomBuildSettingsDecorator.java:52)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-29 00:06:26.765
+!MESSAGE Indexed '2_timebase' (5 sources, 74 headers) in 0.5 sec: 4,376 declarations; 7,694 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.017%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-29 00:31:46.680
+!MESSAGE Indexed '2_timebase' (5 sources, 66 headers) in 0.315 sec: 3,249 declarations; 5,406 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-12-29 01:32:36.804
+!MESSAGE Won't launch debug session since we failed to locate the binary.

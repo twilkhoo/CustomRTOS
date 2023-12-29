@@ -1,0 +1,41 @@
+01:31:43 **** Incremental Build of configuration Debug for project 2_timebase ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F411xE -c -I../Inc -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/2_timebase/chip_headers/CMSIS/Include" -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/2_timebase/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "2_timebase.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\2_timebase\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_timebase.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_timebase.elf
+ 
+arm-none-eabi-size   2_timebase.elf 
+arm-none-eabi-objdump -h -S  2_timebase.elf  > "2_timebase.list"
+   text	   data	    bss	    dec	    hex	filename
+   5460	    104	   1912	   7476	   1d34	2_timebase.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_timebase.list
+ 
+01:31:56 **** Incremental Build of configuration Debug for project 2_timebase ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F411xE -c -I../Inc -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/2_timebase/chip_headers/CMSIS/Include" -I"C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/2_timebase/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "2_timebase.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\2_timebase\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_timebase.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_timebase.elf
+ 
+arm-none-eabi-size   2_timebase.elf 
+arm-none-eabi-objdump -h -S  2_timebase.elf  > "2_timebase.list"
+   text	   data	    bss	    dec	    hex	filename
+   5460	    104	   1912	   7476	   1d34	2_timebase.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_timebase.list
+ 
+01:32:43 **** Incremental Build of configuration Debug for project 2_timebase ****
+make -j12 all 
+arm-none-eabi-gcc -o "2_timebase.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tejas\Documents\Code\CustomRTOS\GCC_STM32CubeIDE\2_timebase\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_timebase.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_timebase.elf
+ 
+arm-none-eabi-size   2_timebase.elf 
+arm-none-eabi-objdump -h -S  2_timebase.elf  > "2_timebase.list"
+   text	   data	    bss	    dec	    hex	filename
+   5460	    104	   1912	   7476	   1d34	2_timebase.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_timebase.list
+ 

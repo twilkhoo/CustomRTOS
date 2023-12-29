@@ -1,0 +1,27 @@
+#include "led.h"
+
+#define GPIOAEN (1U<<0) // 0b 0000 0000 0000 0000 0000 0000 0000 0001
+#define LED_PIN (1U<<5)
+
+void led_init()
+{
+	// Enable clock access to led port (port A, PA5).
+	RCC->AHB1ENR |= GPIOAEN;
+
+	// Set LED pin as output pin.
+	GPIOA->MODER |= (1U<<10);
+	GPIOA->MODER &= ~(1U<<11);
+}
+
+void led_on()
+{
+	// Set LED pin HIGH (PA5 high).
+	GPIOA->ODR |= LED_PIN;
+}
+
+
+void led_off()
+{
+	// Set LED pin LOW (PA5 low).
+	GPIOA->ODR &= ~LED_PIN;
+}
