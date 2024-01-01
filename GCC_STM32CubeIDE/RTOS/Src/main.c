@@ -29,11 +29,9 @@ TaskProfiler Task0_Profiler, Task1_Profiler, Task2_Profiler;
 
 uint32_t semaphore1, semaphore2;
 
-void motor_run();
-void motor_stop();
-void valve_open();
-void valve_close();
-
+void task0run();
+void task1run();
+void task2run();
 
 void task0()
 {
@@ -41,7 +39,7 @@ void task0()
 	{
 		osSemaphoreWait(&semaphore1);
 		Task0_Profiler++;
-		motor_run();
+		task0run();
 		osSemaphorePost(&semaphore2);
 	}
 }
@@ -52,7 +50,7 @@ void task1()
 	{
 		osSemaphoreWait(&semaphore2);
 		Task1_Profiler++;
-		valve_open();
+		task1run();
 		osSemaphorePost(&semaphore1);
 	}
 }
@@ -86,34 +84,17 @@ int main()
 	osKernelLaunch(QUANTA);
 }
 
-void motor_run()
+void task0run()
 {
-	printf("motor is running...\n\r");
+	printf("task0 is running...\n\r");
 }
 
-void motor_stop()
+void task1run()
 {
-	printf("motor is stopping...\n\r");
+	printf("task1 is running...\n\r");
 }
 
-void valve_open()
+void task2run()
 {
-	printf("valve is opening...\n\r");
+	printf("task2 is running...\n\r");
 }
-
-void valve_close()
-{
-	printf("valve is closing...\n\r");
-}
-
-
-
-
-
-
-
-
-
-
-
-
