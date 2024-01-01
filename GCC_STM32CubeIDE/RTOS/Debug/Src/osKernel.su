@@ -1,0 +1,10 @@
+C:/Users/tejas/Documents/Code/CustomRTOS/GCC_STM32CubeIDE/6_SpinlockSemaphore/chip_headers/CMSIS/Include/core_cm4.h:1814:22:__NVIC_SetPriority	16	static
+../Src/osKernel.c:28:6:osKernelStackInit	16	static
+../Src/osKernel.c:60:6:osKernelInit	4	static
+../Src/osKernel.c:68:9:osKernelAddThreads	24	static,ignoring_inline_asm
+../Src/osKernel.c:104:6:osSchedulerLaunch	4	static,ignoring_inline_asm
+../Src/osKernel.c:145:6:osKernelLaunch	16	static
+../Src/osKernel.c:176:24:SysTick_Handler	0	static,ignoring_inline_asm
+../Src/osKernel.c:222:6:osSemaphoreInit	16	static
+../Src/osKernel.c:227:6:osSemaphorePost	16	static,ignoring_inline_asm
+../Src/osKernel.c:239:6:osSemaphoreWait	16	static,ignoring_inline_asm
