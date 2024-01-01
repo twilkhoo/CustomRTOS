@@ -37,23 +37,6 @@ void osKernelStackInit(uint32_t i)
 	// R0...3, 12, LR (link register) are what an exception
 	// pushes onto a stack automatically.
 	// SP=>R13, LR=>R14, PC=>R15.
-
-	// We don't need to init these regs explicitly, but we do so for debugging.
-	TCB_STACK[i][STACKSIZE - 3] = 0xAAAAAAAA;		// LR.
-	TCB_STACK[i][STACKSIZE - 4] = 0xAAAAAAAA;		// R12.
-	TCB_STACK[i][STACKSIZE - 5] = 0xAAAAAAAA;		// R3.
-	TCB_STACK[i][STACKSIZE - 6] = 0xAAAAAAAA;		// R2.
-	TCB_STACK[i][STACKSIZE - 7] = 0xAAAAAAAA;		// R1.
-	TCB_STACK[i][STACKSIZE - 8] = 0xAAAAAAAA;		// R0.
-
-	TCB_STACK[i][STACKSIZE - 9] = 0xAAAAAAAA;		// R11.
-	TCB_STACK[i][STACKSIZE - 10] = 0xAAAAAAAA;		// R10.
-	TCB_STACK[i][STACKSIZE - 11] = 0xAAAAAAAA;		// R9.
-	TCB_STACK[i][STACKSIZE - 12] = 0xAAAAAAAA;		// R8.
-	TCB_STACK[i][STACKSIZE - 13] = 0xAAAAAAAA;		// R7.
-	TCB_STACK[i][STACKSIZE - 14] = 0xAAAAAAAA;		// R6.
-	TCB_STACK[i][STACKSIZE - 15] = 0xAAAAAAAA;		// R5.
-	TCB_STACK[i][STACKSIZE - 16] = 0xAAAAAAAA;		// R4.
 }
 
 
