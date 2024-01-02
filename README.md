@@ -27,13 +27,23 @@ An RTOS made for STM32 microcontrollers, specifically tested on a STM32F411RE Nu
 ### LED and UART drivers.
 The LED and UART drivers are implemented mostly for debugging purposes. The process to create the LED driver could be generalized to handle any GPIO input/output.
 
+https://github.com/twilkhoo/CustomRTOS/assets/30396273/c6e4262e-5f35-4ced-aa18-5fbc576f43f8
+
 ### Round Robin Scheduler
 A round robin scheduler is at the core of this kernel. Currently, the scheduler supports RR context switching three threads, with a specified time quanta. The task profiler indicates the progression of each task evenly.
 
-### Semaphore API
-Naturally, multithreading could imply generating race conditions. For example, two tasks printing different things through UART are racing to use the resource (the serial communication bus), so the output isn't as desired.
+https://github.com/twilkhoo/CustomRTOS/assets/30396273/f5eb4a8f-b86d-45d1-bc57-c707bc12b7f7
+
+### Semaphore 
+
+API
+Naturally, multithreading could imply generating race conditions. For example, two tasks printing different things through UART with a small time quanta (2ms) are racing to use the resource (the serial communication bus), so the output isn't as desired, as shown below.
+
+https://github.com/twilkhoo/CustomRTOS/assets/30396273/5576e0d2-ec88-4ec5-9931-c5c92819f481
 
 Semaphores can solve this, with the current implementation being a spinlock semaphore. A semaphore spins (`osSemaphoreWait`) until it is able to use the resource, which is when it posts (`osSemaphorePost`).
+
+https://github.com/twilkhoo/CustomRTOS/assets/30396273/714813b3-e51d-4929-8791-83ed57456b83
 
 ## Next Steps
 There are other things left to implement, which include:
